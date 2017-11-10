@@ -1,4 +1,4 @@
-package com.liu.limit.bean;
+package com.liu.limit.bean.limit;
 
 import com.liu.limit.annotation.LimitConfig;
 import com.liu.limit.constants.LimitHolder;

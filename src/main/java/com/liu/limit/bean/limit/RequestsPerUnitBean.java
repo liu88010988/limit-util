@@ -1,4 +1,4 @@
-package com.liu.limit.bean;
+package com.liu.limit.bean.limit;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;

@@ -1,7 +1,7 @@
 package com.liu.limit.bean;
 
 import com.liu.limit.annotation.LimitConfig;
-import com.liu.limit.constants.LimitHolder;
+import com.liu.limit.bean.limit.AbstractLimitBean;
 import com.liu.limit.factory.LimitBeanFactory;
 
 public class LimitCheckBean {
@@ -9,7 +9,7 @@ public class LimitCheckBean {
     private AbstractLimitBean limitBean;
 
     public LimitCheckBean(String limitKey, LimitConfig config) {
-        LimitBeanFactory factory = LimitHolder.LIMIT_FACTORY_MAP.get(config.limitType());
+        LimitBeanFactory factory = config.limitType().getFactory();
         if (factory != null) {
             limitBean = factory.build(limitKey, config);
         }

@@ -1,8 +1,8 @@
 package com.liu.limit.factory;
 
 import com.liu.limit.annotation.LimitConfig;
-import com.liu.limit.bean.AbstractLimitBean;
-import com.liu.limit.bean.RateLimitBean;
+import com.liu.limit.bean.limit.AbstractLimitBean;
+import com.liu.limit.bean.limit.RateLimitBean;
 
 public class RateLimitBeanFactory implements LimitBeanFactory {
 
