@@ -20,5 +20,7 @@ public abstract class AbstractLimitBean {
 
     public abstract boolean tryAcquire() throws Exception;
 
-    public abstract void release();
+    public void release(){
+
+    }
 }
