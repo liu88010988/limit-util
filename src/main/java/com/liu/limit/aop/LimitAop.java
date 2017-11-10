@@ -25,7 +25,6 @@ public class LimitAop {
             checkBean = new LimitCheckBean(key, config);
             if (checkBean.tryAcquire()) {
                 return pjp.proceed();
-            } else {
             }
             throw new OutOfLimitException("out of limit");
         } finally {
